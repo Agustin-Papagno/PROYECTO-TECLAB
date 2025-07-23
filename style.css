@@ -1,0 +1,268 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #4e342e !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #f5f0e6 !important; 
+}
+
+.site-footer{
+   background-color: #4e342e;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem; 
+}
+
+/*estilos productos */
+
+.body-products h1{
+  font-size: 3rem;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.product-card {
+  flex: 1 1 300px;
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  color: #4e342e;
+  margin-bottom: 0.5rem;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.product-card p {
+  color: #6d4c41;
+  margin-bottom: 0.5rem;
+}
+
+.add-button {
+  background-color: #4e342e;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #6d4c41;
+}
+
+
+.boton {
+  background-color: #6d4c41; 
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.boton:hover {
+  background-color: #5d4037;
+}
+
+
+#carouselExampleCaptions {
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden; 
+  margin-top: 30px;
+}
+
+.carousel-inner {
+  width: 100%;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+
+body.home .welcome-main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body.home .welcome-section {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=1500&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  gap: 20px;
+}
+
+
+/* ESTILOS PARA ABOUT.HTML */
+
+.body-about{
+  background: linear-gradient(to right, #ffffff, #f7e8cc);
+}
+
+.historia{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 40px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.historia.texto {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.historia h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.historia p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-left: 10px;
+}
+
+.imagen-historia {
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  object-fit: cover;
+  margin-left: 10px;
+}
+
+
+#locations{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+  
+}
+
+#locations h2 {
+  margin-bottom: 15px;
+  font-size: 3rem;
+}
+
+#locations p{
+    font-size: 1.5rem;
+  line-height: 1.6;
+  margin-left: 10px;
+  max-width: 1000px;
+}
+
+
+#about-us{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+
+#about-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+#about-us h2 {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+#about-us img {
+  width: 60%;
+  height: auto;
+  object-fit: cover;
+}
+
+#about-us p{
+    font-size: 1.5rem;
+  line-height: 1.6;
+  margin-left: 10px;
+}
