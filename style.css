@@ -19,6 +19,10 @@ html, body {
   background-color: #4e342e !important;
 }
 
+.navbar-brand{
+  font-family: "sour gummy", sans-serif;
+}
+
 .navbar .navbar-brand,
 .navbar .nav-link {
   color: #ffffff !important;
@@ -27,6 +31,10 @@ html, body {
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
   color: #f5f0e6 !important; 
+}
+
+.welcome-section h1{
+  font-family: "pacifico", cursive;
 }
 
 .site-footer{
