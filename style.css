@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -19,7 +20,7 @@ html, body {
   background-color: #4e342e !important;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-family: "sour gummy", sans-serif;
 }
 
@@ -30,30 +31,30 @@ html, body {
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-  color: #f5f0e6 !important; 
+  color: #f5f0e6 !important;
 }
 
-.welcome-section h1{
+.welcome-section h1 {
   font-family: "pacifico", cursive;
 }
 
-.site-footer{
-   background-color: #4e342e;
+.site-footer {
+  background-color: #4e342e;
   color: white;
   text-align: center;
   padding: 15px 10px;
-  font-size: 0.9rem; 
+  font-size: 0.9rem;
 }
 
 /*estilos productos */
 
-.body-products h1{
+.body-products h1 {
   font-size: 3rem;
   margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 .product-container {
@@ -68,7 +69,7 @@ html, body {
   max-width: 300px;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   text-align: center;
   transition: transform 0.3s ease;
@@ -112,7 +113,7 @@ html, body {
 
 
 .boton {
-  background-color: #6d4c41; 
+  background-color: #6d4c41;
   color: white;
   text-decoration: none;
   padding: 12px 24px;
@@ -130,7 +131,7 @@ html, body {
 #carouselExampleCaptions {
   max-width: 600px;
   margin: auto;
-  overflow: hidden; 
+  overflow: hidden;
   margin-top: 30px;
 }
 
@@ -146,20 +147,13 @@ html, body {
 }
 
 
+/* ESTILOS PARA EL INDEX*/
 
-
-body.home .welcome-main {
+/*seccion bienvenida*/
+.welcome-section {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-body.home .welcome-section {
-  height: 100vh;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5), 
-      rgba(0, 0, 0, 0.5)
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
     url('https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=1500&q=80');
   background-size: cover;
   background-position: center;
@@ -174,14 +168,104 @@ body.home .welcome-section {
   gap: 20px;
 }
 
+/*seccion variedad*/
+.variety-section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.variety-section h2 {
+  font-size: 50px;
+  font-family: "pacifico", cursive;
+  margin: 35px;
+}
+
+.variety-section p {
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+
+.variety-section img {
+  width: 80vh;
+  border-radius: 20px;
+}
+
+/*seccion los mas pedidos*/
+.wanted-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.wanted-section h2{
+  font-size: 50px;
+  font-family: "pacifico", cursive;
+  margin: 35px;
+}
+
+.wanted-section p{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.card p {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.card h3 {
+  min-height: 40px;
+}
+
+.card button {
+  margin-top: auto;
+  padding: 10px 15px;
+  background: #6f4e37;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #5a3d2e;
+}
+
 
 /* ESTILOS PARA ABOUT.HTML */
 
-.body-about{
+.body-about {
   background: linear-gradient(to right, #ffffff, #f7e8cc);
 }
 
-.historia{
+.historia {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -215,18 +299,18 @@ body.home .welcome-section {
 .imagen-historia {
   width: 60%;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   object-fit: cover;
   margin-left: 10px;
 }
 
 
-#locations{
+#locations {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
-  
+
 }
 
 #locations h2 {
@@ -234,15 +318,15 @@ body.home .welcome-section {
   font-size: 3rem;
 }
 
-#locations p{
-    font-size: 1.5rem;
+#locations p {
+  font-size: 1.5rem;
   line-height: 1.6;
   margin-left: 10px;
   max-width: 1000px;
 }
 
 
-#about-us{
+#about-us {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -269,8 +353,8 @@ body.home .welcome-section {
   object-fit: cover;
 }
 
-#about-us p{
-    font-size: 1.5rem;
+#about-us p {
+  font-size: 1.5rem;
   line-height: 1.6;
   margin-left: 10px;
 }
