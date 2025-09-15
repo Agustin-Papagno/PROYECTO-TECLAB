@@ -149,6 +149,7 @@ body {
 
 /* ESTILOS PARA EL INDEX*/
 
+
 /*seccion bienvenida*/
 .welcome-section {
   height: 100vh;
@@ -192,21 +193,62 @@ body {
   border-radius: 20px;
 }
 
+/*seccion catalogo*/
+
+.catalogue{
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #5d4037, #3e2723);
+  color: white;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 60px auto; 
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.catalogue h2{
+  font-size: 30px;
+  font-family: "pacifico", cursive;
+  margin-bottom: 15px;
+}
+
+.catalogue p{
+  font-size: 20px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
 /*seccion los mas pedidos*/
 .wanted-section {
   text-align: center;
   padding: 40px 20px;
+  background: linear-gradient(135deg, #5d4037, #3e2723);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
 }
 
 .wanted-section h2{
   font-size: 50px;
   font-family: "pacifico", cursive;
+  color: #ffffff;
   margin: 35px;
 }
 
 .wanted-section p{
   font-size: 30px;
   margin-bottom: 30px;
+  color: #ffffff;
 }
 
 .cards {
@@ -238,10 +280,13 @@ body {
 .card p {
   margin-bottom: 10px;
   font-size: 15px;
+  color:black;
+  font-family: "sour gummy", sans-serif;
 }
 
 .card h3 {
   min-height: 40px;
+  font-family: "sour gummy", sans-serif;
 }
 
 .card button {
