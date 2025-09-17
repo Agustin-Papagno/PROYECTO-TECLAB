@@ -47,54 +47,16 @@
         </header>
 
         <h1>Productos</h1>
-        <main class="main-content container py-4">
-            <div class="product-container">
-
-                <div class="product-card">
-                    <h3>Nicaragua</h3>
-                    <img src="../img/capsulas_nicaragua.avif" alt="Cápsulas Nicaragua">
-                    <p>Estilo Nespresso · $6.90</p>
-                    <button class="add-button">Agregar al carrito</button>
+        <main>
+            <!-- Contenedor donde se insertarán las tarjetas -->
+            <div id="productos"></div>
+            <!-- Modal para ver detalles del producto -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <div id="modal-body"></div>
                 </div>
-
-                <div class="product-card">
-                    <h3>Colombia</h3>
-                    <img src="../img/capsula_colombia.avif" alt="Cápsulas Colombia">
-                    <p>Estilo Nespresso · $6.90</p>
-                    <button class="add-button">Agregar al carrito</button>
-                </div>
-
-                <div class="product-card">
-                    <h3>Ethiopia</h3>
-                    <img src="../img/capsula_ethiopia.avif" alt="Cápsulas Ethiopia">
-                    <p>Estilo Nespresso · $6.90</p>
-                    <button class="add-button">Agregar al carrito</button>
-                </div>
-
-                <div class="product-card">
-                    <h3>Indonesia</h3>
-                    <img src="../img/capsulas_indonesia.avif" alt="Cápsulas Indonesia">
-                    <p>Estilo Nespresso · $6.90</p>
-                    <button class="add-button">Agregar al carrito</button>
-                </div>
-
-                <div class="product-card">
-                    <h3>Cape Town Lungo</h3>
-                    <img src="../img/capsulas-capeTownLungo.avif" alt="Cápsulas Indonesia">
-                    <p>Estilo Nespresso · $6.90</p>
-                    <button class="add-button">Agregar al carrito</button>
-                </div>
-
-                <div class="product-card">
-                    <h3>Buenos Aires Lungo</h3>
-                    <img src="../img/capsulas_indonesia.avif" alt="Cápsulas Indonesia">
-                    <p>Estilo Nespresso · $6.90</p>
-                    <button class="add-button">Agregar al carrito</button>
-                </div>
-
-
             </div>
-        </main>
 
 
         </main>
@@ -103,9 +65,15 @@
             <p>@ 2025 Cafeteria Papagno</p>
         </footer>
     </div>
+    <!--SCRIPT BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <!--SCRIPT JAVASCRIPT-->
+    <script src="../JS/productos.js" defer></script>
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
+
 
 </html>

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "nombre": "Nicaragua",
+    "imagen": "../img/capsulas_nicaragua.avif",
+    "descripcion":"Descubre el sabor intenso y equilibrado de nuestras cápsulas de Nicaragua. Con granos seleccionados de altitud, cada taza ofrece notas suaves a chocolate y nueces, con un aroma envolvente que despierta los sentidos. Perfectas para quienes buscan un café de cuerpo medio, cremoso y con un retrogusto agradable que invita a repetir.",
+    "precio": 6.90
+  },
+  {
+    "id": 2,
+    "nombre": "Colombia",
+    "imagen": "../img/capsula_colombia.avif",
+    "descripcion":"Disfruta la riqueza de los cafetales colombianos en cada cápsula. Con granos 100% arábica seleccionados, este café ofrece un equilibrio perfecto entre acidez y dulzura, con notas frutales y un aroma intenso que llena la taza. Ideal para quienes buscan un café vibrante, suave y lleno de carácter.",
+    "precio": 6.90
+  },
+  {
+    "id": 3,
+    "nombre": "Ethiopia",
+    "imagen": "../img/capsula_ethiopia.avif",
+    "descripcion":"Sumérgete en la esencia del café etíope con nuestras cápsulas premium. Cada taza revela notas florales y cítricas únicas, con un cuerpo ligero y un aroma delicadamente afrutado que transporta los sentidos a los orígenes del café. Perfectas para quienes disfrutan de sabores exóticos y sofisticados.",
+    "precio": 6.90
+  },
+  {
+    "id": 4,
+    "nombre": "Indonesia",
+    "imagen": "../img/capsulas_indonesia.avif",
+    "descripcion":"Experimenta el carácter profundo y exótico del café de Indonesia. Cada cápsula ofrece un cuerpo robusto y aterciopelado, con notas terrosas y especiadas, acompañadas de un aroma intenso que envuelve la taza. Perfecto para quienes buscan un café con personalidad y fuerza.",
+    "precio": 6.90
+  },
+  {
+    "id": 5,
+    "nombre": "Cape Town Lungo",
+    "imagen": "../img/capsulas-capeTownLungo.avif",
+    "descripcion":"Descubre la intensidad elegante de Cape Town Lungo. Con granos cuidadosamente seleccionados, este café ofrece un cuerpo pleno y suave, con notas ligeramente tostadas y un aroma envolvente. Ideal para quienes prefieren un café lungo equilibrado y lleno de carácter.",
+    "precio": 6.90
+  },
+  {
+    "id": 6,
+    "nombre": "Buenos Aires Lungo",
+    "imagen": "../img/capsulas_buenosAiresLungo.avif",
+    "descripcion":"Disfruta de un café largo y equilibrado con Buenos Aires Lungo. Cada cápsula combina suavidad y cuerpo, con sutiles notas tostadas y un aroma delicado que llena la taza. Ideal para quienes buscan un lungo elegante y fácil de disfrutar a cualquier hora.",
+    "precio": 6.90
+  }
+]
