@@ -45,26 +45,31 @@ function mostrarModal(producto) {
 
   modalBody.innerHTML = `
     <h3>${producto.nombre}</h3>
-    <img src="${producto.imagen}" alt="${producto.nombre}" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+    <img src="${producto.imagen}" alt="${producto.nombre}" style="width:60%; border-radius:8px; margin-bottom:1rem;">
     <p>${producto.descripcion}</p>
     <p><strong>Precio:</strong> $${producto.precio.toFixed(2)}</p>
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" min="1" value="1" style="margin-bottom: 1rem; padding: 6px; width: 60px; text-align: center;">
     <button id="agregar-carrito" data-id="${producto.id}" class="add-button">Agregar al carrito</button>
   `;
 
   modal.style.display = 'flex';
 
-  document.getElementById('agregar-carrito').addEventListener('click', () => {
-    agregarAlCarrito(producto);
+   document.getElementById('agregar-carrito').addEventListener('click', () => {
+    const cantidad = parseInt(document.getElementById('cantidad').value);
+    if (cantidad >= 1) {
+      agregarAlCarrito(producto, cantidad);
+    } else {
+      Swal.fire({
+        title: 'Cantidad inválida',
+        text: 'Por favor, ingresa una cantidad válida.',
+        icon: 'warning',
+        confirmButtonText: 'Aceptar'
+      });
+    }
   });
 }
-
-// 5. Simular agregar al carrito
-function agregarAlCarrito(producto) {
-  console.log(`Agregado al carrito: ${producto.nombre}`);
-  alert(`Agregaste "${producto.nombre}" al carrito`);
-}
-
-// 6. Cerrar modal
+// 5. Cerrar modal
 function prepararModal() {
   const modal = document.getElementById('modal');
   const closeButton = document.querySelector('.close-button');
@@ -79,6 +84,33 @@ function prepararModal() {
     }
   });
 }
+
+// 6.Funcion agregar al carrito
+function agregarAlCarrito(producto, cantidad = 1) {
+  let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+  const existente = carrito.find(item => item.id === producto.id);
+
+  if (existente) {
+    existente.cantidad += cantidad;
+  } else {
+    carrito.push({ ...producto, cantidad });
+  }
+
+  localStorage.setItem('carrito', JSON.stringify(carrito));
+
+  // Feedback visual
+    Swal.fire({
+    title: '¡Producto agregado!',
+    text: `"${producto.nombre}" fue añadido al carrito.`,
+    icon: 'success',
+    confirmButtonText: 'Aceptar',
+    timer: 2000,
+    showConfirmButton: false
+  });
+}
+
+
 
 // 7. Inicializar
 document.addEventListener('DOMContentLoaded', () => {

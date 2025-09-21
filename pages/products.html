@@ -35,10 +35,11 @@
                                 <a class="nav-link active" aria-current="page" href="../index.html">inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Productos</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="./about.html">Acerca de nosotros</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="./cart.html">Carrito</a>
+                            </li>    
 
                         </ul>
                     </div>
@@ -46,17 +47,22 @@
             </nav>
         </header>
 
-        <h1>Productos</h1>
+
         <main>
-            <!-- Contenedor donde se insertarán las tarjetas -->
-            <div id="productos"></div>
-            <!-- Modal para ver detalles del producto -->
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                    <span class="close-button">&times;</span>
-                    <div id="modal-body"></div>
+            <section class="productos-section">
+                <div class="productos-wrapper">
+                    <h1>Productos</h1>
+                    <div id="productos" class="productos-grid"></div>
                 </div>
-            </div>
+
+                <!-- Modal para ver detalles del producto -->
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <div id="modal-body"></div>
+                    </div>
+                </div>
+            </section>
 
 
         </main>
@@ -72,6 +78,10 @@
 
     <!--SCRIPT JAVASCRIPT-->
     <script src="../JS/productos.js" defer></script>
+
+    <!--SCRIPT SWEET ALERTS-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 </body>
 
