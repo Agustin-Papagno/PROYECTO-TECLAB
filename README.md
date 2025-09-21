@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Agutsin Papagno</h1>
+<h1 align="center">Hi 👋, I'm Agustin Papagno</h1>
 <h3 align="center">A passionate frontend developer from Argentina</h3>
 
 - 🔭 Estoy trabajando en **Mi proyecto Final**
