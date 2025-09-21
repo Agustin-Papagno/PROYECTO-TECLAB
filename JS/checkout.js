@@ -62,6 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.open(url, '_blank');
     localStorage.removeItem('carrito');
+    formulario.reset();
+    actualizarDireccion();
 
   });
 });
